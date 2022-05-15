@@ -45,7 +45,7 @@ function getQuestion() {
   choicesEl.innerHTML = "";
 
   // loop over choices
-  currentQuestion.choices.forEach(function(choice, i) {
+  currentQuestion.choices.forEach(function (choice, i) {
     // create new button for each choice
     var choiceNode = document.createElement("button");
     choiceNode.setAttribute("class", "choice");
@@ -87,7 +87,7 @@ function questionClick() {
 
   // flash right/wrong feedback on page for half a second
   feedbackEl.setAttribute("class", "feedback");
-  setTimeout(function() {
+  setTimeout(function () {
     feedbackEl.setAttribute("class", "feedback hide");
   }, 1000);
 
